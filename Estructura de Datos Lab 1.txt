@@ -1,0 +1,88 @@
+/* Programa para resolver ecuacion cuadratica
+   Bruno Ardaya*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float a,b,c,r1,r2,raiz;
+    raiz=sqrt(pow(b,2)-4*a*c);
+   cout<<"Ingrese los valores de a, b y c para resolver la ecuacion cuadratica. (ax2+bx+c), a no puede ser 0."<<endl;
+   cin>>a; cin>>b; cin>>c;
+   
+   if(c==0)
+   {
+       r1=(-b/a);
+       cout<<"El resultado es: "<<r1<<endl;
+   }
+   else
+   {
+       r1=(-b+raiz)/(2*a);
+       r2=(-b-raiz)/(2*a);
+       cout<<"Las respuestas son: "<<r1<<" y "<<r2;
+   }
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;}
+//Declaracio de prototipo
+
+float area(float l);
+
+int main()
+{
+    float lado;
+    cout<<"Ingrese el lado del cuadrado";
+    do{
+        cin>>lado;
+    }while(lado<=0);
+    cout<<"El area es: "<<area(lado);
+    return 0;
+}
+
+float area(float l);
+{
+    float a;
+    a=l*l;
+    return a;
+}
