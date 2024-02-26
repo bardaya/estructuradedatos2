@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int MCM(int ,int );
+int MCD(int ,int );
+
+int main()
+{
+    int a,b;
+    cout<<"Ingrese el primer numero: "; cin>>a;
+    cout<<"Ingrese el segundo numero: "; cin>>b;
+    cout<<"El Minimo Comun Multiplo es: "<<MCM(a,b)<<endl;
+    return 0;
+}
+int MCD(int a,int b){
+    if (b==0){
+        return a;
+    }
+    else{
+        return MCD(b, a%b);
+    }
+}
+int MCM(int x, int y){
+    return (x*y)/MCD(x,y);
+}
